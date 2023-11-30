@@ -1,3 +1,8 @@
+! Title: Pdurdy's Ublock Twitch Filters
+! License: https://github.com/Pdurdy/Adblocking/blob/main/LICENSE
+! GitHub issues: https://github.com/Pdurdy/Adblocking/issues
+! GitHub pull requests: https://github.com/Pdurdy/Adblocking/pulls
+
 ! Twitch Chat badges
 www.twitch.tv##div.chat-badge
 

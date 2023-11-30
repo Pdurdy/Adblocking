@@ -1,3 +1,8 @@
+! Title: Pdurdy's Ublock Instagram Filters
+! License: https://github.com/Pdurdy/Adblocking/blob/main/LICENSE
+! GitHub issues: https://github.com/Pdurdy/Adblocking/issues
+! GitHub pull requests: https://github.com/Pdurdy/Adblocking/pulls
+
 ! 2023-11-07 https://www.instagram.com
 !||scontent.cdninstagram.com/v/*$xhr,domain=www.instagram.com
 !instagram.com##+js(no-xhr-if, scontent.cdninstagram.com/v/)

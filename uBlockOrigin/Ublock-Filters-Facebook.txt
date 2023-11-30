@@ -1,4 +1,9 @@
-# Trim various uri paramiters
+! Title: Pdurdy's Ublock Facebook Filters
+! License: https://github.com/Pdurdy/Adblocking/blob/main/LICENSE
+! GitHub issues: https://github.com/Pdurdy/Adblocking/issues
+! GitHub pull requests: https://github.com/Pdurdy/Adblocking/pulls
+
+! Trim various uri paramiters
 !||facebook.com$removeparam=__cft__[0]
 !||facebook.com$removeparam=__cft__[1]
 !||facebook.com$removeparam=__tn__
