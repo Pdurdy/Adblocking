@@ -1,0 +1,12 @@
+! 2023-11-07 https://www.instagram.com
+!||scontent.cdninstagram.com/v/*$xhr,domain=www.instagram.com
+!instagram.com##+js(no-xhr-if, scontent.cdninstagram.com/v/)
+!instagram.com##+js(no-fetch-if, method:GET)
+!instagram.com##+js(nowebrtc)
+!www.instagram.com##article:has(span:has-text(/Suggested for you/))
+!www.instagram.com##article:has(div:matches-attr("role"="button"):has-text(/^Follow$/))
+!www.instagram.com##article > div:nth-child(2)
+!www.instagram.com##
+
+! Block video content from feed
+||scontent.cdninstagram.com/v/*$xhr,redirect=noop-1s.mp4,domain=www.instagram.com

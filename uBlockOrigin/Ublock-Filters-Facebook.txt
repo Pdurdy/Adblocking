@@ -1,0 +1,51 @@
+# Trim various uri paramiters
+!||facebook.com$removeparam=__cft__[0]
+!||facebook.com$removeparam=__cft__[1]
+!||facebook.com$removeparam=__tn__
+||facebook.com$removeparam=acontext
+||facebook.com$removeparam=notif_id
+||facebook.com$removeparam=notif_t
+||facebook.com$removeparam=ref
+
+! From https://github.com/kowith337/PersonalFilterListCollection/blob/master/filterlist/testing/testlist.txt
+||facebook.com/*&entry*=$1p,xhr,important,removeparam=/^entry/
+||facebook.com/*&privacy_*=$1p,xhr,removeparam=/^privacy_/
+||facebook.com/*&__cft__*=$1p,removeparam=/^__cft__/
+||facebook.com/*&__tn__=$1p,xhr,important,removeparam=__tn__
+||facebook.com/*&__xts__*=$1p,removeparam=/^__xts__/
+||facebook.com/*?entry*=$1p,xhr,important,removeparam=/^entry/
+||facebook.com/*?privacy_*=$1p,xhr,removeparam=/^privacy_/
+||facebook.com/*?__cft__*=$1p,removeparam=/^__cft__/
+||facebook.com/*?__tn__=$1p,xhr,important,removeparam=__tn__
+||facebook.com/*?__xts__*=$1p,removeparam=/^__xts__/
+||fbcdn.net/*&_nc_*=$css,script,from=facebook.com|messenger.com,removeparam=/^_nc_/
+||fbcdn.net/*?_nc_*=$css,script,from=facebook.com|messenger.com,removeparam=/^_nc_/
+||youtube-nocookie.com/get_video_info?$xhr,removeparam=ei
+||youtube.com/get_video_info?$xhr,removeparam=ei
+
+! Facebook hide suggested
+www.facebook.com##div[role="main"] div.x1lliihq:has(span:has-text(/Instagram|Suggested for you|Sorry, we\'re having trouble playing this video\.|Reels/))
+www.facebook.com##div[role="main"] div.x1lliihq:has(a[href*="https://www.facebook.com/games"])
+
+
+! Hide Reels on profile pages
+!www.facebook.com##div[role="feed"] span>span>span:has-text(/Reels/):upward(30)
+
+! Instagram in profiles
+!www.facebook.com##div[role="feed"] span>span>span:has-text("Instagram"):upward(23)
+
+! Broken video in profiles
+www.facebook.com##div[role="feed"] span:has-text("Sorry, we're having trouble playing this video."):upward(24)
+
+! Block Various requests
+facebook.com##+js(no-fetch-if, method:*)
+facebook.com##+js(nowebrtc)
+facebook.com##+js(no-xhr-if, nw/)
+facebook.com##+js(no-xhr-if, ajax/bnzai)
+
+! Fix video not avalible 
+||video.fhio2-1.fna.fbcdn.net/v/$media,redirect=noop-1s.mp4,domain=www.facebook.com
+||video.fhio2-2.fna.fbcdn.net/v/$media,redirect=noop-1s.mp4,domain=www.facebook.com
+
+! Facebook Join now bottom banner - for browsing while not logged in (incognito)
+www.facebook.com##.x1u8a7rm.x17qophe.xixxii4.x1ye3gou.x1s14bel.xn6708d.x1xy6bms.xds687c.x9f619.xayqjjm.x1ey2m1c.x2bj2ny.x193iq5w.x2lah0s.xdt5ytf.x78zum5

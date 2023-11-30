@@ -1,0 +1,11 @@
+! Twitch Chat badges
+www.twitch.tv##div.chat-badge
+
+! Twitch Chat emoticons
+www.twitch.tv##div.chat-image__container
+
+! Twitch Extesions dock
+www.twitch.tv##div.extensions-dock__dock
+
+! Twitch chat header, recent subs/top folx
+www.twitch.tv##div.chat-room__content>div:first-of-type
