@@ -1,4 +1,5 @@
 0.0.0.0	aa.google.com
+0.0.0.0 analytics.google.com
 0.0.0.0 api.cortana.ai
 0.0.0.0	api.edgeoffer.microsoft.com
 0.0.0.0	api.msn.com
@@ -23,7 +24,9 @@
 0.0.0.0	collector.pabs.comcast.com
 0.0.0.0	config.edge.skype.com
 0.0.0.0	crl.verisign.com
+0.0.0.0 csp.withgoogle.com
 0.0.0.0	d.btttag.com
+0.0.0.0 darkreader.org
 0.0.0.0	devtools.azureedge.net
 0.0.0.0	dns.msftncsi.com
 0.0.0.0	donate.ssl.xmrig.com
@@ -43,6 +46,7 @@
 0.0.0.0 googleads.g.doubleclick.net
 0.0.0.0	heapanalytics.com
 0.0.0.0	improving.duckduckgo.com
+0.0.0.0 incoming.telemetry.mozilla.org
 0.0.0.0	ipv6.msftconnecttest.com
 0.0.0.0	links.duckduckgo.com
 0.0.0.0	logging.api.intuit.com
@@ -56,6 +60,7 @@
 0.0.0.0	ntp.msn.com
 0.0.0.0	peoplestackwebexperiments-pa.clients6.google.com
 0.0.0.0	rum.api.intuit.com
+0.0.0.0 safebrowsing.googleapis.com
 0.0.0.0	sb.scorecardresearch.com
 0.0.0.0	signaler-pa.clients6.google.com
 0.0.0.0	siteintercept.qualtrics.com
